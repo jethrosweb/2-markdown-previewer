@@ -1,3 +1,21 @@
-h1 {
-    color: green;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: blue;
+    height: 100vh;
+}
+
+#preview {
+    background-color: white;
+}
+
+#preview > img {
+    max-width: 100%;
 }
