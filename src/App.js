@@ -1,24 +1,17 @@
 import React from "react"
 import "./App.scss"
 import { marked } from "marked"
+import logo from "./jethros-web-logo-small.png"
 
-const initialState = `
-This is a paragraph
-**This is bolded text**
-> Block quotes!
+const initialState = `# Welcome to my React markdown previewer!
+## Type something in the editor above...
+And it will be reflected here in the previewer. 
 
-# Heading
-## Heading 2
+**If you want to see more [click here](https://github.com/jethrosweb)**
 
-- list item 1
-- list item 2
-- list item 3
+This is inline code nested within back-ticks \`<div></div>\`
 
-[Visit my website](link here)
-
-This is an inline \`<div></div>\`
-
-This is a block code
+Below is a code block:
 
 \`\`\`
 let x = 1;
@@ -26,7 +19,11 @@ let x = 2;
 let z = x + y;
 \`\`\`
 
-![React](link here)
+- Hi, I'm list item 1.
+- Hi, I'm list item 2.
+- Hi, I'm list item 3.
+> See my logo below.. This is brought to you by block quotes.
+![Logo](https://avatars.githubusercontent.com/u/96323853?v=4)
 `
 
 marked.setOptions({
@@ -45,9 +42,20 @@ export default function App() {
 
     return (
         <div className="container">
-            <textarea id="editor" value={text} onChange={handleChange}/>
-            <Preview markdown={text} />
+            <div id="editor-tab">
+                <img src={logo} alt="Logo" class="logo" />
+                <p>Editor</p>
+            </div>
+            <div id="editor-container">
+                <textarea id="editor" readonly value={text} onChange={handleChange}/>
+                <div id="preview-tab">
+                    <img src={logo} alt="Logo" class="logo" />
+                    <p>Previewer</p>
+                </div>
+                <Preview markdown={text} />
+            </div>
         </div>
+
     )
 }
 
