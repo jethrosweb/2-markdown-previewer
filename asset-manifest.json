@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/2-markdown-previewer/static/css/main.c60724a0.css",
+    "main.js": "/2-markdown-previewer/static/js/main.d5ee839e.js",
+    "static/media/jethros-web-logo-small.png": "/2-markdown-previewer/static/media/jethros-web-logo-small.3bdf32ac6e995ad2cac0.png",
+    "index.html": "/2-markdown-previewer/index.html",
+    "main.c60724a0.css.map": "/2-markdown-previewer/static/css/main.c60724a0.css.map",
+    "main.d5ee839e.js.map": "/2-markdown-previewer/static/js/main.d5ee839e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c60724a0.css",
+    "static/js/main.d5ee839e.js"
+  ]
+}
