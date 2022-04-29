@@ -19,15 +19,14 @@ body {
         display: flex;
         align-items: center;
         justify-content: left;
-        background-color: #bf3f3f;
         height: 35px;
-        min-width: 600px;
-        max-width: 600px;
+        width: 600px;
+        margin-top: 40px;
         padding: 5px;
+        background-color: #bf3f3f;
         border: 2px solid black;
         box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
         font-weight: bold;
-        margin-top: 40px;
     }
     #editor-container {
         display: flex;
@@ -37,7 +36,6 @@ body {
             min-height: 250px;
             min-width: 600px;
             max-width: 600px;
-            width: 600px;
             border: 1px solid black;
             box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
             background-color: #d4b5b5;
@@ -47,8 +45,7 @@ body {
     }
     #preview-tab {
         @extend #editor-tab;
-        min-width: 800px;
-        max-width: 800px;
+        width: 800px;
     }
     #preview {
         min-height: 200px;
@@ -64,10 +61,4 @@ body {
         width: 25px;
         margin-right: 5px;
     }
-}
-
-
-
-#preview > img {
-    max-width: 100%;
 }
